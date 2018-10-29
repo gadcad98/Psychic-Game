@@ -8,19 +8,19 @@ function randLetter() {
     
     var letter = letters[Math.floor(Math.random() * letters.length)];
     
-    return letter
+    return letter;
 
-    for(var i = 0; i < letters.length; i++) {
-        if(i == letter) {
-            alert("You guessed the letter I was thinking of!");
-            won++;
-        }
+    // for(var i = 0; i < letters.length; i++) {
+    //     if(i == letter) {
+    //         alert("You guessed the letter I was thinking of!");
+    //         won++;
+    //     }
 
-        else(i !== letter) {
-            alert("You failed to guess the correct letter. Try again!");
-            lost++;
-        }
-    }
+    //     else(i !== letter) {
+    //         alert("You failed to guess the correct letter. Try again!");
+    //         lost++;
+    //     }
+    // }
      
 
 }
