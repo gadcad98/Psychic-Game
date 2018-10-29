@@ -1,3 +1,5 @@
+alert('Press any letter on the keyboard to begin playing');
+
 function randLetter() {
 
     var won = 0;
