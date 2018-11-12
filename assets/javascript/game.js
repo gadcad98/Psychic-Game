@@ -14,15 +14,12 @@ document.onkeypress = function(event) {
     console.log(event.key);
     
     if (guess === letter) {
-        wins++;
+        wins++,
+        guesses = 10;
     } else {
         guesses--;
     }
     
-    if (guess === letter) {
-        guesses = 10;
-    }
-
     if (guesses === 0) {
         losses++,
         guesses = 10;
@@ -34,10 +31,6 @@ document.onkeypress = function(event) {
     document.getElementById('guessed').innerHTML = "Your Guesses so Far: " + guess;
 };
 
-
-// So you can just put line 9 into the if statement to reset your letter.
-// Or what you can do is put the variables inside a function, and just call it a reset function or something
-// and put that function into the if statement, depending on what happen
 
 // So you can just put line 9 into the if statement to reset your letter.
 // Or what you can do is put the variables inside a function, and just call it a reset function or something
